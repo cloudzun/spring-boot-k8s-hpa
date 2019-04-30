@@ -8,10 +8,10 @@ spec:
     apiVersion: extensions/v1beta1
     kind: Deployment
     name: backend
-  minReplicas: 1
+  minReplicas: 2
   maxReplicas: 10
   metrics:
   - type: Pods
     pods:
       metricName: messages
-      targetAverageValue: 10
+      targetAverageValue: 1
