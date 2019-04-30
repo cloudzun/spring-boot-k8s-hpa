@@ -14,8 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: spring-boot-hpa
-        imagePullPolicy: IfNotPresent
+        image: chengzh/spring-boot-hpa
         env:
         - name: ACTIVEMQ_BROKER_URL
           value: "tcp://queue:61616"
